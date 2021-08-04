@@ -6,6 +6,8 @@
 
     <script>
 
+  /*
+
         //tipos de função (void , retorno)
         //void - função de excução, sem retorno.
         //retorno - função de retorno.
@@ -16,11 +18,25 @@
 
         var area = largura * comprimento
 
-        document.write('O terreno posssui ' + area + ' metros quadrados')
+        return area
           
       }
 
-      calcularAreaTerreno(15 , 25)
+      var largura = prompt('Digite a largura do terreno em metros')
+      var comprimento = prompt('Digite o comprimento do terreno em metros')
+
+      var area = calcularAreaTerreno(largura , comprimento)
+
+      document.write('O terreno posssui ' + area + ' metros quadrados')
+  */
+
+  function soma(a , b) {
+    return a + b
+  }
+
+  console.log(soma(7 , 7))
+  console.log(soma(7, 7, 9, 15)) // Js Desconsiderada os parâmetros adicionais
+      
 
     </script>
     
