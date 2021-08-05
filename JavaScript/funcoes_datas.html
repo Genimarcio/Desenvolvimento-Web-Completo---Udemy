@@ -84,6 +84,25 @@
       document.write('<hr />')
       document.write(data2.getTime())
 
+      document.write('<br><br><hr />')
+
+      //encontrar a quantidade de milissegundos entre a data1 e data2
+
+      var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+      
+      document.write(milissegundos_entre_datas)
+
+      //1 dua tem 24 horas, cada hora tem 60 minutos
+      // cada mminuto tem 60 segundos
+      // cada segundo tem 1000 milisegundos
+      //então quanto milissegundos existem em um dia?
+      var milissegundos_por_dia = (1*24*60*60*1000)
+      document.write('1 dia tem: ' + milissegundos_por_dia + ' milissegundos')
+
+      document.write('<br><br><hr />')
+      document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)')
+
+
      
       
       
